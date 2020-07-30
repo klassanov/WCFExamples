@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bb5a0cd5-af42-4dcb-a431-98055e15c3ac" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8081/MathService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="289c2b4b-0d5c-42ca-9b30-9ac20c707e0c" SourceId="1" SourceUrl="http://localhost:8081/MathService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="cc920309-1d63-4f63-88a5-e5b743a90b57" SourceId="1" SourceUrl="http://localhost:8081/MathService/?xsd=xsd3" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="01f02414-1995-4c02-b14d-e80bf9cc2b76" SourceId="1" SourceUrl="http://localhost:8081/MathService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="b155b285-994d-4543-a094-895f353e2cb5" SourceId="1" SourceUrl="http://localhost:8081/MathService/?disco" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="038ee085-6c49-4f70-8d78-74548edb2263" SourceId="1" SourceUrl="http://localhost:8081/MathService/?xsd=xsd1" />
+    <MetadataFile FileName="MathService.wsdl" MetadataType="Wsdl" ID="1cb4ecd1-b8a2-4a7e-af06-e70f23c9fb6f" SourceId="1" SourceUrl="http://localhost:8081/MathService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
