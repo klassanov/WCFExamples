@@ -59,13 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IMathService.cs" />
-    <Compile Include="MathAnswer.cs" />
+    <Compile Include="MessageInspection\DivideInspector.cs" />
+    <Compile Include="MessageInspection\InputParameterInspection.cs" />
+    <Compile Include="Models\MathAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MathService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

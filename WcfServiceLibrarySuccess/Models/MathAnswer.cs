@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace WcfServiceLibrarySuccess
+namespace WcfServiceLibrarySuccess.Models
 {
     [DataContract]
     public class MathAnswer

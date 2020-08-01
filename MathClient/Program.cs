@@ -11,7 +11,7 @@ namespace MathClient
             var answer = client.Add(5, 6);
             Console.WriteLine($"Answer: {answer.Answer}");
 
-            answer = client.Divde(5, 0);
+            //answer = client.Divde(5, 0);
         }
     }
 }

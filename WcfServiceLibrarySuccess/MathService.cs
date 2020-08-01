@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ServiceModel;
+using WcfServiceLibrarySuccess.Models;
 
 namespace WcfServiceLibrarySuccess
 {
@@ -23,6 +25,10 @@ namespace WcfServiceLibrarySuccess
         public MathAnswer Divde(decimal a, decimal b)
         {
             LogInputData("Divide", a, b);
+            if (b == 0)
+            {
+                throw new FaultException<DivideByZeroException>(new DivideByZeroException(), new FaultReason("Abe uio"));
+            }
             decimal result = a / b;
             LogResult(result);
             return new MathAnswer(result);
