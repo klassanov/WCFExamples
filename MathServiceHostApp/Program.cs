@@ -9,6 +9,13 @@ namespace MathServiceHostApp
     {
         static void Main(string[] args)
         {
+            string abc = "aBc";
+            string ABC = "AbC";
+            bool areEqual = abc.Equals(ABC);
+
+
+
+
             Uri baseAddress = new Uri("http://localhost:8081/MathService/");
             ServiceHost selfHost = new ServiceHost(typeof(MathService), baseAddress);
 

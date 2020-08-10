@@ -11,7 +11,7 @@ namespace WcfServiceLibrarySuccess
             LogInputData("Add", a, b);
             decimal result = a + b;
             LogResult(result);
-            return new MathAnswer(result);
+            return new MathAnswer(result, 15);
         }
 
         public MathAnswer Subtract(decimal a, decimal b)

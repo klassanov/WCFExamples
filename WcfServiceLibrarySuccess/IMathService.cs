@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ServiceModel;
-using WcfServiceLibrarySuccess.MessageInspection;
 using WcfServiceLibrarySuccess.Models;
 
 namespace WcfServiceLibrarySuccess
@@ -8,11 +7,11 @@ namespace WcfServiceLibrarySuccess
     [ServiceContract]
     public interface IMathService
     {
-        [InputParameterInspection]
+        //[InputParameterInspection]
         [OperationContract]
         MathAnswer Add(decimal a, decimal b);
 
-        [InputParameterInspection]
+        //[InputParameterInspection]
         [OperationContract]
         MathAnswer Subtract(decimal a, decimal b);
 
