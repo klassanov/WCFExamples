@@ -4,8 +4,14 @@ using WcfServiceLibrarySuccess.Models;
 
 namespace WcfServiceLibrarySuccess
 {
+
     public class MathService : IMathService
     {
+        //public static void Configure(ServiceConfiguration config)
+        //{
+
+        //}
+
         public MathAnswer Add(decimal a, decimal b)
         {
             LogInputData("Add", a, b);

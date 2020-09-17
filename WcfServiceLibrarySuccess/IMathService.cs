@@ -4,7 +4,7 @@ using WcfServiceLibrarySuccess.Models;
 
 namespace WcfServiceLibrarySuccess
 {
-    [ServiceContract]
+    [ServiceContract(Name = "AlexPortType", Namespace = "AlexNamespace")]
     public interface IMathService
     {
         //[InputParameterInspection]

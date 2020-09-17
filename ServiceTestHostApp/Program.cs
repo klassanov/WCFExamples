@@ -1,20 +1,20 @@
 ﻿using System;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using WcfServiceLibrarySuccess;
+using WcfServiceTestLibrary;
 
-namespace MathServiceHostApp
+namespace ServiceTestHostApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Uri baseAddress = new Uri("http://localhost:8081/MathService/");
-            ServiceHost selfHost = new ServiceHost(typeof(MathService), baseAddress);
+            Uri baseAddress = new Uri("http://localhost:8080/Service1.svc");
+            ServiceHost selfHost = new ServiceHost(typeof(Service1), baseAddress);
 
             try
             {
-                selfHost.AddServiceEndpoint(typeof(IMathService), new BasicHttpBinding(), "MathService");
+                selfHost.AddServiceEndpoint(typeof(IService1), new BasicHttpBinding(), "Service1");
 
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior
                 {
